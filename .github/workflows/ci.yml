@@ -7,11 +7,8 @@ jobs:
   java-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Print path
-        run: pwd
+      - name: Checkout code
+      - uses: actions/checkout@v4
 
-      - name: clone repository
-        run: git clone https://github.com/shawnwu-linkage/GithubActions.git
-
-      - name: Print package
-        run: ls
+      - name: run test
+        run: ./gradlew test
