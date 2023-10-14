@@ -8,8 +8,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: print path
+        run: |
+          pwd
+          ls -lh
+
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: print path 2
+        run: |
+          pwd
+          ls -lh
 
       - name: run test
         run: ./gradlew test
