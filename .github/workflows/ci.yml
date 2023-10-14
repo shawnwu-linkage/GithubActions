@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: test-branch
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: print path 2
         run: |
