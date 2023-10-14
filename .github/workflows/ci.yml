@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone repository
-        run: git clone
+        run: git clone https://github.com/shawnwu-linkage/GithubActions.git
