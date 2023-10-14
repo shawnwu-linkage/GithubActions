@@ -8,7 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print path
-        run: ls | pwd
+        run: pwd
 
       - name: clone repository
         run: git clone https://github.com/shawnwu-linkage/GithubActions.git
+
+      - name: Print package
+        run: ls
